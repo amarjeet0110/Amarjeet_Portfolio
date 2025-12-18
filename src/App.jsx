@@ -72,12 +72,15 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-purple-900 text-white relative overflow-x-hidden">
+      {/* Animated Background with Stars, Shooting Stars, Saturn and Sun */}
       <div className="fixed inset-0 z-0 overflow-hidden">
+        {/* Cosmic Galaxy Background */}
         <div
           className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-pink-900/30 animate-pulse"
           style={{ animationDuration: "8s" }}
         ></div>
 
+        {/* Stars */}
         {[...Array(150)].map((_, i) => (
           <div
             key={`star-${i}`}
@@ -95,6 +98,7 @@ const Portfolio = () => {
           />
         ))}
 
+        {/* Shooting Stars */}
         {[...Array(3)].map((_, i) => (
           <div
             key={`shooting-${i}`}
@@ -110,6 +114,7 @@ const Portfolio = () => {
           />
         ))}
 
+        {/* Sun */}
         <div
           className="absolute w-24 h-24 rounded-full bg-gradient-to-br from-yellow-300 via-orange-400 to-red-500 shadow-2xl"
           style={{
@@ -122,6 +127,7 @@ const Portfolio = () => {
           }}
         />
 
+        {/* Saturn orbiting around Sun */}
         <div
           className="absolute"
           style={{
@@ -139,8 +145,10 @@ const Portfolio = () => {
             }}
           >
             <div className="absolute right-0 top-1/2 -translate-y-1/2">
+              {/* Saturn planet */}
               <div className="relative w-12 h-12">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-yellow-200 via-amber-300 to-orange-400"></div>
+                {/* Saturn rings */}
                 <div
                   className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-4 border-2 border-amber-300/60 rounded-full"
                   style={{ transform: "translate(-50%, -50%) rotateX(75deg)" }}
@@ -150,6 +158,7 @@ const Portfolio = () => {
           </div>
         </div>
 
+        {/* Cosmic nebula effects */}
         <div
           className="absolute top-10 left-10 w-64 h-64 bg-purple-600/20 rounded-full blur-3xl animate-pulse"
           style={{ animationDuration: "6s" }}
@@ -200,7 +209,9 @@ const Portfolio = () => {
         }
       `}</style>
 
+      {/* Content */}
       <div className="relative z-10">
+        {/* Navigation */}
         <nav className="fixed w-full bg-black/90 backdrop-blur-md z-50 shadow-xl border-b border-purple-500/30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
@@ -208,6 +219,7 @@ const Portfolio = () => {
                 AK
               </div>
 
+              {/* Desktop Menu */}
               <div className="hidden md:flex space-x-8">
                 {[
                   "Home",
@@ -231,6 +243,7 @@ const Portfolio = () => {
                 ))}
               </div>
 
+              {/* Mobile Menu Button */}
               <button
                 className="md:hidden text-white hover:text-blue-400 transition-colors"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -240,6 +253,7 @@ const Portfolio = () => {
             </div>
           </div>
 
+          {/* Mobile Menu */}
           {mobileMenuOpen && (
             <div className="md:hidden bg-gray-900/95 backdrop-blur-md px-4 py-4 space-y-3 border-t border-gray-700">
               {[
@@ -262,11 +276,13 @@ const Portfolio = () => {
           )}
         </nav>
 
+        {/* Hero Section */}
         <section
           id="home"
           className="min-h-screen flex items-center justify-center px-4 pt-20"
         >
           <div className="max-w-6xl mx-auto flex flex-col items-center">
+            {/* Photo at Top */}
             <div className="mb-8 flex justify-center">
               <div className="relative">
                 <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl transform hover:scale-105 transition-transform duration-300">
@@ -283,6 +299,7 @@ const Portfolio = () => {
               </div>
             </div>
 
+            {/* Name and About Below Photo */}
             <div className="text-center max-w-3xl">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent animate-pulse">
                 Amarjeet Kumar
@@ -300,8 +317,9 @@ const Portfolio = () => {
                 to learn and collaborate on exciting tech challenges.
               </p>
 
+              {/* Social Media Icons */}
               <div className="flex justify-center space-x-6 mb-6">
-                
+                <a
                   href="https://www.linkedin.com/in/amarjeet-kumar-45a4a0234"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -310,7 +328,7 @@ const Portfolio = () => {
                 >
                   <Linkedin size={28} />
                 </a>
-                
+                <a
                   href="https://github.com/amarjeet0110"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -319,7 +337,7 @@ const Portfolio = () => {
                 >
                   <Github size={28} />
                 </a>
-                
+                <a
                   href="https://www.instagram.com/_amarjeet__10/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -328,7 +346,7 @@ const Portfolio = () => {
                 >
                   <Instagram size={28} />
                 </a>
-                
+                <a
                   href="https://www.youtube.com/@amarjeetkumar-i1l"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -356,6 +374,7 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* About Section */}
         <section
           id="about"
           className="min-h-screen flex items-center justify-center px-4 py-20"
@@ -398,6 +417,7 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* Projects Section */}
         <section
           id="projects"
           className="min-h-screen flex items-center justify-center px-4 py-20"
@@ -434,6 +454,7 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* Skills Section */}
         <section
           id="skills"
           className="min-h-screen flex items-center justify-center px-4 py-20"
@@ -467,6 +488,7 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* Achievements Section */}
         <section
           id="achievements"
           className="min-h-screen flex items-center justify-center px-4 py-20"
@@ -506,6 +528,7 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* Contact Section */}
         <section
           id="contact"
           className="min-h-screen flex items-center justify-center px-4 py-20"
@@ -539,9 +562,10 @@ const Portfolio = () => {
           </div>
         </section>
 
+        {/* Footer */}
         <footer className="bg-black/90 border-t border-purple-500/30 py-8 text-center text-gray-400">
           <div className="flex justify-center space-x-6 mb-6">
-            
+            <a
               href="https://www.linkedin.com/in/amarjeet-kumar-45a4a0234"
               target="_blank"
               rel="noopener noreferrer"
@@ -550,7 +574,7 @@ const Portfolio = () => {
             >
               <Linkedin size={24} />
             </a>
-            
+            <a
               href="https://github.com/amarjeet0110"
               target="_blank"
               rel="noopener noreferrer"
@@ -559,7 +583,7 @@ const Portfolio = () => {
             >
               <Github size={24} />
             </a>
-            
+            <a
               href="https://www.instagram.com/_amarjeet__10/"
               target="_blank"
               rel="noopener noreferrer"
@@ -568,7 +592,7 @@ const Portfolio = () => {
             >
               <Instagram size={24} />
             </a>
-            
+            <a
               href="https://www.youtube.com/@amarjeetkumar-i1l"
               target="_blank"
               rel="noopener noreferrer"

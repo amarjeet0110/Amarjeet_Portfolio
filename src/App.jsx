@@ -287,7 +287,7 @@ const Portfolio = () => {
               <div className="relative">
                 <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl transform hover:scale-105 transition-transform duration-300">
                   <img
-                    src="/IMG-20250927-WA0008.png"
+                    src="/profile.png"
                     alt="Amarjeet Kumar"
                     className="w-full h-full object-cover"
                     onError={(e) => {

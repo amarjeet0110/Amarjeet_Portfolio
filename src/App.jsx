@@ -524,12 +524,7 @@ const Portfolio = () => {
                 className="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-4 rounded-full font-semibold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-110 flex items-center gap-3 text-lg shadow-2xl"
               >
                 <Download size={24} />
-                const downloadResume = () => {
-               const link = document.createElement("a");
-                link.href = "/Amarjeet_Kumar_Resume.pdf";
-                 link.download = "Amarjeet_Kumar_Resume.pdf";
-                 link.click();
-                  };
+               
 
                 Download Resume
               </button>

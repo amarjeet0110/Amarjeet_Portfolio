@@ -308,7 +308,7 @@ const Portfolio = () => {
                 Computer Science Engineering Student
               </p>
               <p className="text-lg text-gray-400 mb-8">
-                IoT Specialization | Government Engineering College Vaishali
+                Data Analytics | Government Engineering College Vaishali
               </p>
               <p className="text-base text-gray-300 leading-relaxed mb-10 px-4">
                 Passionate about technology, data analysis, and IoT solutions.
@@ -504,13 +504,15 @@ const Portfolio = () => {
               <div className="space-y-6">
                 <div className="bg-gray-800/70 p-6 rounded-2xl border border-gray-700 hover:border-blue-500 transition-colors">
                   <h3 className="text-xl font-semibold mb-3 text-blue-400">
-                    Event Manager - College Fest "Tarang"
+                    District-Level Chess Representative (College Champion)
                   </h3>
                   <p className="text-gray-300 leading-relaxed">
-                    Assisted in organizing and managing the cultural event,
-                    contributing to smooth event flow and participant handling.
-                    Coordinated logistics and stage activities, ensuring timely
-                    execution of all event segments.
+                    Won the College Chess Championship and proudly represented the institution at district-level tournaments,
+                    demonstrating strategic thinking, competitive excellence, sportsmanship, discipline, and leadership through 
+                    consistent performance and dedication.“Secured the College Chess Championship and represented the college at
+                    district-level competitions, showcasing analytical skills, tactical expertise, perseverance, discipline, sportsmanship,
+                    and the ability to perform under pressure.
+                  
                   </p>
                 </div>
               </div>
